@@ -9,12 +9,85 @@
     </head>
 
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-      </nav>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="/Users/tommymuch/Desktop/tommy.devs/tommy_devs_LOGO_Apr_15-modified.png" alt="Tommy Devs Logo" class="logo">
+                </a>
+            </div>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="about.html" class="nav-link">About</a>
+        </div>
+    </nav>
+  
+<style>
+    /* Styles for NAV barrrrrrr */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4; /* Adjust the background color as needed */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ddd; /* Dark background for contrast */
+    color: #333;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Max width for the navbar */
+    margin: 0 auto; /* Center the navbar */
+    padding: 1rem;
+}
+
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: rgb(104, 25, 104); /* Color change on hover */
+}
+
+.logo {
+    height: 60px; /* Adjust based on your preference */
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slight scale up on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        padding: 0.3rem 0;
+    }
+
+    .logo {
+        height: 50px;
+        margin-top: 1rem;
+    }
+}
+
+</style>
   
 
 <style>
