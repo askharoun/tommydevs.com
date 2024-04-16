@@ -19,7 +19,132 @@
               </nav>
         
         </header>
-    
+    <style>
+        /* Resetting default margins and paddings */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting up basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+header {
+    background-color: #333; /* Dark gray background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333; /* Dark gray background */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center articles horizontally */
+}
+
+article {
+    width: 100%;
+    max-width: 600px; /* Limit the width of articles */
+    background-color: #fff; /* White background for articles */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    margin-bottom: 20px; /* Add spacing between articles */
+    padding: 20px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Add spacing between image and text */
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #333; /* Dark gray background for button */
+    color: #fff; /* White text color */
+    padding: 8px 16px; /* Add padding for button */
+    border-radius: 4px;
+    text-decoration:wavy; /* Remove underline from button */
+}
+
+.read-more:hover {
+    background-color: violet; /* Darken button on hover */
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 7;
+    border-radius: 20%;
+    border-style: none;
+    width: 130px;
+    height: 10px;
+  }
+
+.First_post {
+    color: grey;
+    background-color: transparent;
+    text-align: center;
+}
+
+td {
+    height: 10px;
+    margin-top: 10px;
+}
+
+.timestamp {
+    margin-top: 10px; /* Adjust as needed */
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the nav bar links */
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Responsive nav bar: stacks the links vertically on small screens */
+@media screen and (max-width: 600px) {
+    nav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+    </style>
             <main>
                 <br>
                 <article>
