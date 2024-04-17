@@ -96,6 +96,8 @@ td {
 nav {
     background-color: #333;
     overflow: hidden;
+    border: 4px rebeccapurple;
+    border-style: double;
 }
 
 /* Style the nav bar links */
