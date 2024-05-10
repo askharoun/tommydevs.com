@@ -133,6 +133,7 @@ body {
     top: 0;
     left: 0;
     inset: 0;
+    right: 5px;
     background: linear-gradient(-45deg, #172A3A, #6A0DAD, #9B30FF, #6A0DAD, #172A3A);
     background-size: 200%;
     background-position: 0 0;
@@ -152,6 +153,7 @@ body {
     top: 0;
     left: 0;
     inset: 0;
+    right: 5px;
     background: linear-gradient(-45deg, #172A3A, #6A0DAD, #9B30FF, #6A0DAD, #172A3A);
     background-size: 200%;
     background-position: 0 0;
@@ -178,10 +180,12 @@ body {
     color: #fff;
     text-decoration: none;
     margin: 20px 0;
+    margin-right: 60px;
     z-index: 1;
     opacity: 1;
     animation: slideRight 1s ease backwards;
     animation-delay: 2s;
+
 }
 
 .home-sci a::before {
@@ -361,3 +365,456 @@ footer {
     color: white;
 }
 /* Woah Why you peeking all the way down here????? */
+
+
+
+/* For smaller screens/mobile devices */
+@media (max-width: 767px) {
+    .header {
+      padding: 10px 5%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar {
+      margin-top: 20px;
+    }
+  
+    .navbar a {
+      margin-left: 0;
+      margin-right: 20px;
+    }
+  
+    .home {
+      flex-direction: column-reverse;
+      padding: 50px 5% 0;
+    }
+  
+    .home-content {
+      max-width: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .home-img {
+      width: 300px;
+      height: 300px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .home-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Instead of 55px */
+  }
+  
+  p {
+    font-size: 1rem; /* Instead of 16px */
+  }
+
+  /* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* Adjust layout for smaller screens */
+    
+    body {
+      font-size: 14px; /* Decrease font size for better readability */
+    }
+  
+    .container {
+      /* Use Flexbox or Grid to control layout */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .header {
+      margin-bottom: 20px;
+    }
+  
+    .content {
+      margin-bottom: 20px;
+    }
+  
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .button {
+      margin: 5px 0; /* Add spacing between buttons */
+    }
+  }
+
+
+
+    /* Navigation Links */
+    .nav-links {
+        display: flex;
+        justify-content: flex-end;
+
+        .nav-links a {
+            margin-left: 20px;
+        }
+    }
+/* Media Query for Smaller Screens */
+@media (max-width: 767px) {
+              /* Hamburger Menu Icon */
+        .hamburger-menu {
+            display: none; /* Hide the icon initially */
+            cursor: pointer;
+        
+        
+        .line {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: blueviolet;
+            transition: transform 0.3s ease-in-out;
+        }
+            
+            .navbar {
+                position: relative;
+            }
+        
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #172A3A;
+                padding: 10px;
+            }
+        
+            .nav-links a {
+                margin: 10px 0;
+            }
+        
+            .hamburger-menu {
+                display: block;
+            }
+        
+            /* Hamburger Menu Animation */
+            .hamburger-menu.active .line:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+        
+            .hamburger-menu.active .line:nth-child(2) {
+                opacity: 0;
+            }
+        
+            .hamburger-menu.active .line:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+        
+        /* Hamburger Menu Icon */
+        .hamburger-menu {
+            display: none; /* Hide the icon initially */
+            cursor: pointer;
+        }
+        
+        .line {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: blueviolet;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .nav-links a {
+            margin-left: 20px;
+        }
+        
+        /* Media Query for Smaller Screens */
+        @media (max-width: 767px) {
+            .navbar {
+                position: relative;
+            }
+        
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #172A3A;
+                padding: 10px;
+            }
+        
+            .nav-links a {
+                margin: 10px 0;
+            }
+        
+            .hamburger-menu {
+                display: block;
+            }
+        
+            /* Hamburger Menu Animation */
+            .menu-toggle:checked ~ .hamburger-menu .line:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+        
+            .menu-toggle:checked ~ .hamburger-menu .line:nth-child(2) {
+                opacity: 0;
+            }
+        
+            .menu-toggle:checked ~ .hamburger-menu .line:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        
+            /* Show/Hide Navigation Links */
+            .menu-toggle:checked ~ .nav-links {
+                display: flex;
+            }
+        }
+}
+
+/* Existing styles */
+
+/* Add responsive styling for smaller devices */
+@media (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.9);
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.3s;
+    }
+    
+    .navbar.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: purple;
+        margin: 5px 0;
+        transition: 0.3s;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+        margin: 15px;
+    }
+}
+
+/* Ensure all anchor tags within .nav-links have a default styling */
+.nav-links a {
+    display: block;
+    color: purple;
+    text-decoration: none;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #172A3A;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Add other styles here... */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: purple;
+        margin: 5px 0;
+    }
+
+    .navbar {
+        position: fixed;
+        background-color: #fff; /* light background for the navbar */
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all 0.3s;
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%; /* full width */
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+        color: purple; /* style links */
+        text-decoration: none;
+        padding: 15px; /* larger clickable area */
+        display: block; /* stack links */
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 30px;
+        height: 3px;
+        background-color: purple; /* Ensure visibility */
+        margin: 5px 0;
+    }
+
+    .navbar {
+        position: fixed;
+        background-color: rgba(210, 203, 203, 0.9); /* Slightly transparent white */
+        top: 0;
+        left: -100%; /* Initially off-screen */
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: all 0.3s ease;
+    }
+
+    .navbar.active {
+        left: 0; /* Bring on screen when active */
+    }
+
+    .nav-links {
+        display: none; /* Hidden by default */
+        width: 100%;
+        padding: 20px 0; /* Padding for touch targets */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show as flexbox when active */
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+        color: purple; /* Purple text for visibility */
+        text-decoration: none;
+        padding: 15px; /* Padding for larger clickable area */
+        display: block; /* Stack links vertically */
+    }
+}
+
+
+
+/* Adjust the container that holds the text and icons */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align items for a neat look */
+    gap: 10px; /* Creates space between each child element */
+}
+
+/* Styling for the text */
+.text-block {
+    background: rgba(0, 0, 0, 0.5); /* Optional: adds background for better readability */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners for aesthetic */
+    margin: 5px 0; /* Adds space above and below the text */
+}
+
+/* Icon styling to ensure they don't touch each other or text */
+.icon {
+    padding: 5px; /* Adds padding around the icon */
+    margin: 5px; /* Adds margin around the icon for additional space */
+    border-radius: 50%; /* Circle shape */
+    background: purple; /* Example background color */
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Aligns children vertically */
+    align-items: center; /* Center-aligns items horizontally */
+    justify-content: space-around; /* Distributes space evenly around items */
+    width: 100%; /* Ensures the container uses full width available */
+    padding: 20px; /* Adds padding inside the container */
+}
+
