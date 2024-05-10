@@ -746,7 +746,7 @@ body {
 
     .navbar {
         position: fixed;
-        background-color: rgba(210, 203, 203, 0.9); /* Slightly transparent white */
+        background-color: #172A3A; /* Slightly transparent white */
         top: 0;
         left: -100%; /* Initially off-screen */
         width: 100%;
@@ -826,4 +826,7 @@ body {
     main {
         padding-top: 50px;
     }
+   
+    .home-sci a {
+    margin-right: -60px;
 }
