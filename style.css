@@ -818,3 +818,12 @@ body {
     padding: 20px; /* Adds padding inside the container */
 }
 
+@media (max-width: 768px) {
+    img {
+        opacity: 0;
+    }
+
+    main {
+        padding-top: 50px;
+    }
+}
