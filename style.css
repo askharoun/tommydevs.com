@@ -837,10 +837,10 @@ body {
         inset: 0;
         right: 5px;
         background: linear-gradient(-45deg, #172A3A, #6A0DAD);
-        background-size: 100%;
+        background-size: 130%;
         background-position: 0 0;
         z-index: -1;
         border-radius: 40px;
-        filter: blur(1px);
+        filter: blur(0.5px);
     }
 }
