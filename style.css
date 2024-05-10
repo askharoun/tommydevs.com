@@ -830,4 +830,10 @@ body {
     .home-sci a {
     margin: 20px 0;
     }
+
+    .logo {
+        background: linear-gradient(-45deg, #172A3A, #6A0DAD, #9B30FF, #6A0DAD, #172A3A);
+        border-radius: 40px;
+        
+    }
 }
