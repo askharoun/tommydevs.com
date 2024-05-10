@@ -836,11 +836,16 @@ body {
         left: 0;
         inset: 0;
         right: 5px;
-        background: linear-gradient(-45deg, #172A3A, #6A0DAD);
-        background-size: 130%;
+        text-align: center;
+        justify-self: center;
+        justify-content: center;
+        background: linear-gradient(-45deg, #172A3A, #6A0DAD, transparent);
+        background-size: 200%;
+        width: 250px;
+        height: 40px;
         background-position: 0 0;
         z-index: -1;
         border-radius: 40px;
-        filter: blur(0.5px);
+        filter: blur(0.3px);
     }
 }
