@@ -832,12 +832,11 @@ body {
     }
 
     .logo {
-        position: absolute;
         top: 0;
         left: 0;
         inset: 0;
         right: 5px;
-        background: linear-gradient(-45deg, #172A3A, #6A0DAD, #9B30FF, #6A0DAD, #172A3A);
+        background: linear-gradient(-45deg, #172A3A, #6A0DAD);
         background-size: 100%;
         background-position: 0 0;
         z-index: -1;
