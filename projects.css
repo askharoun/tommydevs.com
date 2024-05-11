@@ -1136,6 +1136,7 @@ body {
     padding: 20px; /* Adds padding inside the container */
 }
 
+/* 1 */
 @media (max-width: 768px) {
     img {
         opacity: 0;
