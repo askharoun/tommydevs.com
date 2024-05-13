@@ -1539,7 +1539,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 99 !important;
 }
 
 @media (max-width: 767px) {
