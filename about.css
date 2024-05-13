@@ -1047,3 +1047,38 @@ body {
         filter: blur(0.3px);
     }
 }
+
+@media (max-width: 768px) {
+    .logo-container {
+    font-size: 25px;
+    color: aliceblue;
+    font-weight: 600;
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    pointer-events: none;
+    animation: slideTop 1s ease forwards;
+    top: 0;
+    left: 0;
+    inset: 0;
+    right: 5px;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #172A3A, #6A0DAD, transparent);
+    background-size: 200%;
+    width: 250px;
+    height: 40px;
+    background-position: 0 0;
+    z-index: -1;
+    border-radius: 40px;
+    filter: blur(0.3px);
+}
+
+    .logo-container:hover {
+        color: #9B30FF; /* Change color on hover */
+        text-decoration: underline; /* Add underline on hover */
+    }
+}
