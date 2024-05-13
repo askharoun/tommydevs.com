@@ -1542,3 +1542,13 @@ footer {
     z-index: 100;
 }
 
+@media (max-width: 767px) {
+    .image, div.glowing-circle::after, div.glowing-circle {
+        display:none;
+        width: 0px;
+        height: 0px;
+    }
+    main {
+        padding: 10% 0;
+    }
+}
