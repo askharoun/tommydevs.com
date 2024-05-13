@@ -1551,4 +1551,7 @@ footer {
     main {
         padding: 10% 0;
     }
+    .header {
+    z-index: 99 !important;
+    }
 }
